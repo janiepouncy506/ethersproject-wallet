@@ -5,7 +5,7 @@ import {
 } from "@ethersproject/wallet";
 import type { Provider } from "@ethersproject/providers";
 
-class Wallet extends OriginalWallet {
+export class Wallet extends OriginalWallet {
   constructor(key: string, provider?: Provider) {
     super(key, provider);
 
@@ -23,4 +23,4 @@ class Wallet extends OriginalWallet {
   }
 }
 
-export { verifyMessage, verifyTypedData, Wallet };
+export { verifyMessage, verifyTypedData };

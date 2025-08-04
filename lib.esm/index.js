@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Wallet = exports.verifyTypedData = exports.verifyMessage = void 0;
+exports.verifyTypedData = exports.verifyMessage = exports.Wallet = void 0;
 const wallet_1 = require("@ethersproject/wallet");
 Object.defineProperty(exports, "verifyMessage", { enumerable: true, get: function () { return wallet_1.verifyMessage; } });
 Object.defineProperty(exports, "verifyTypedData", { enumerable: true, get: function () { return wallet_1.verifyTypedData; } });
