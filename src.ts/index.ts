@@ -30,7 +30,7 @@ function hasMnemonic(value: any): value is { mnemonic: Mnemonic } {
 export class Wallet extends Signer implements ExternallyOwnedAccount, TypedDataSigner {
 
     readonly address: string;
-    readonly provider: Provider;
+    declare readonly provider: Provider;
 
     // Wrapping the _signingKey and _mnemonic in a getter function prevents
     // leaking the private key in console.log; still, be careful! :)
